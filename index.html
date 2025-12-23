@@ -192,7 +192,7 @@
   
                   // 1. Inner Wireframe Icosahedron (The Structure)
                   const geo1 = new THREE.IcosahedronGeometry(1.5, 1);
-                  const mat1 = new THREE.MeshBasicMaterial({ color: 0x404040, wireframe: true, transparent: true, opacity: 0.3 });
+                  const mat1 = new THREE.MeshBasicMaterial({ color: 0x22223b, wireframe: true, transparent: true, opacity: 0.3 });
                   const mesh1 = new THREE.Mesh(geo1, mat1);
                   group.add(mesh1);
   
@@ -201,7 +201,7 @@
                   const pos = geo2.attributes.position.array;
                   const pointsGeo = new THREE.BufferGeometry();
                   pointsGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-                  const pointsMat = new THREE.PointsMaterial({ size: 0.03, color: 0x71717a }); // zinc-500
+                  const pointsMat = new THREE.PointsMaterial({ size: 0.03, color: 0xc9ada7 }); // zinc-500
                   const points = new THREE.Points(pointsGeo, pointsMat);
                   group.add(points);
   
@@ -338,6 +338,7 @@
                       <span className="text-[10px] text-zinc-400 font-mono">Design Portfolio</span>
                   </div>
                   <div className="hidden md:flex flex-col gap-1 items-end">
+                    <MagneticNavItem href="#writing">Recent Writing</MagneticNavItem>
                       <MagneticNavItem href="#work">Projects</MagneticNavItem>
                       <MagneticNavItem href="#experience">Experience</MagneticNavItem>
                       <MagneticNavItem href="#contact">Contact</MagneticNavItem>
@@ -483,7 +484,7 @@
                                   >
                                       <div className="px-4 py-4 flex items-center justify-between gap-4">
                                           <div>
-                                              <p className="text-sm md:text-base text-zinc-400 group-hover:text-white font-sans">
+                                              <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-sans">
                                                   {post.title}
                                               </p>
                                               <p className="text-[11px] text-zinc-500 font-mono mt-1 uppercase tracking-widest">
@@ -592,10 +593,10 @@
               }, []);
   
               const works = [
-                  { name: "Chronos OS", category: "Spatial Interface", year: "2024" },
-                  { name: "Nebula AI", category: "Generative Engine", year: "2023" },
-                  { name: "Vanguard", category: "Fintech 3D Viz", year: "2023" },
-                  { name: "Lumina", category: "WebGL Experience", year: "2022" },
+                  { name: "Chronos OS", category: "Spatial Interface • CLICK TO OPEN", year: "2024" },
+                  { name: "Nebula AI", category: "Generative Engine • CLICK TO OPEN", year: "2023" },
+                  { name: "Vanguard", category: "Fintech 3D Viz • CLICK TO OPEN", year: "2023" },
+                  { name: "Lumina", category: "WebGL Experience • CLICK TO OPEN", year: "2022" },
               ];
 
               const handleToggle = (i) => {
