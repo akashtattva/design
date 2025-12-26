@@ -25,6 +25,7 @@
   mono: ['JetBrains Mono', 'monospace'],
   departure: ['DepartureMono', 'JetBrains Mono', 'monospace'],
   chakra: ['ChakraPetch', 'Inter', 'system-ui', 'sans-serif'],
+  supreme: ['Supreme', 'Inter', 'system-ui', 'sans-serif'],
   },
   colors: {
   zinc: {
@@ -103,6 +104,34 @@
   /* Chakra Petch Utility Class */
   .font-chakra {
     font-family: 'ChakraPetch', 'Inter', system-ui, sans-serif;
+  }
+
+  /* Supreme Font Faces */
+  @font-face {
+    font-family: 'Supreme';
+    src: url('supreme font/Supreme-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Supreme';
+    src: url('supreme font/Supreme-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Supreme';
+    src: url('supreme font/Supreme-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Supreme Utility Class */
+  .font-supreme {
+    font-family: 'Supreme', 'Inter', system-ui, sans-serif;
   }
 
   body { cursor: none; }
@@ -394,7 +423,7 @@
                       </div>
                       
                       <div className="hero-sub mt-12 md:mt-16 max-w-2xl">
-                           <p className="text-lg md:text-xl text-white font-sans leading-relaxed">
+                           <p className="text-lg md:text-xl text-white font-supreme font-light leading-relaxed">
                             Hi, I am Akash. Nice to meet you! I am a designer who is all about solving complex problems, reverse-engineering things, and taking extensive notes. I view AI as a collaborative, creative partner that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
                             <br />
                             <br />
@@ -484,7 +513,7 @@
                                   >
                                       <div className="px-4 py-4 flex items-center justify-between gap-4">
                                           <div>
-                                              <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-sans">
+                                              <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-supreme">
                                                   {post.title}
                                               </p>
                                               <p className="text-[11px] text-zinc-500 font-mono mt-1 uppercase tracking-widest">
