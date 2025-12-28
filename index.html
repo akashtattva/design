@@ -25,7 +25,7 @@
   mono: ['JetBrains Mono', 'monospace'],
   departure: ['DepartureMono', 'JetBrains Mono', 'monospace'],
   chakra: ['ChakraPetch', 'Inter', 'system-ui', 'sans-serif'],
-  supreme: ['Supreme', 'Inter', 'system-ui', 'sans-serif'],
+  helvetica: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
   },
   colors: {
   zinc: {
@@ -106,32 +106,46 @@
     font-family: 'ChakraPetch', 'Inter', system-ui, sans-serif;
   }
 
-  /* Supreme Font Faces */
+  /* Helvetica Neue Font Faces */
   @font-face {
-    font-family: 'Supreme';
-    src: url('supreme font/Supreme-Light.otf') format('opentype');
+    font-family: 'Helvetica Neue';
+    src: url('helvetica neue/HelveticaNeue-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('helvetica neue/HelveticaNeue-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Supreme';
-    src: url('supreme font/Supreme-Regular.otf') format('opentype');
+    font-family: 'Helvetica Neue';
+    src: url('helvetica neue/HelveticaNeue-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: 'Supreme';
-    src: url('supreme font/Supreme-Bold.otf') format('opentype');
+    font-family: 'Helvetica Neue';
+    src: url('helvetica neue/HelveticaNeue-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('helvetica neue/HelveticaNeue-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
 
-  /* Supreme Utility Class */
-  .font-supreme {
-    font-family: 'Supreme', 'Inter', system-ui, sans-serif;
+  /* Helvetica Neue Utility Class */
+  .font-helvetica {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   }
 
   body { cursor: none; }
@@ -423,8 +437,8 @@
                       </div>
                       
                       <div className="hero-sub mt-12 md:mt-16 max-w-2xl">
-                           <p className="text-lg md:text-xl text-white font-supreme font-light leading-relaxed">
-                            Hi, I am Akash. Nice to meet you! I am a designer who is all about solving complex problems, reverse-engineering things, and taking extensive notes. I view AI as a collaborative, creative partner that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
+                            <p className="text-lg md:text-xl text-white font-helvetica font-regular leading-relaxed">
+                            Hi, I am Akash. I am a designer who is all about solving complex problems, reverse-engineering things, and taking extensive notes. I view AI as a collaborative, creative partner that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
                             <br />
                             <br />
                             Please check out my:
@@ -513,7 +527,7 @@
                                   >
                                       <div className="px-4 py-4 flex items-center justify-between gap-4">
                                           <div>
-                                              <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-supreme">
+                                               <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-helvetica">
                                                   {post.title}
                                               </p>
                                               <p className="text-[11px] text-zinc-500 font-mono mt-1 uppercase tracking-widest">
@@ -562,7 +576,7 @@
                                   <span className="text-xs font-mono text-zinc-700 group-hover:text-zinc-400 transition-colors">
                                       0{index + 1}
                                   </span>
-                                  <h3 className="text-4xl md:text-6xl text-zinc-400 group-hover:text-white font-medium tracking-tighter transition-all duration-300 group-hover:translate-x-4">
+                                  <h3 className="text-4xl md:text-6xl text-zinc-400 group-hover:text-white font-helvetica font-regular tracking-tighter transition-all duration-300 group-hover:translate-x-4">
                                       {name}
                                   </h3>
                               </div>
@@ -659,7 +673,7 @@
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
                           <div>
                               <h2 className="text-5xl md:text-7xl lg:text-8xl text-zinc-800 font-departure tracking-tighter mb-8 leading-none select-none opacity-90">Experience</h2>
-                               <p className="text-lg text-white font-sans leading-relaxed max-w-sm text-glow">
+                               <p className="text-lg text-white font-helvetica font-regular leading-relaxed max-w-sm text-glow">
                                   Delivering robust, scalable, and beautiful software solutions for industry leaders. 
                                   Focusing on the intersection of design systems and WebGL.
                                </p>
@@ -671,11 +685,11 @@
                                   { company: "Agency", role: "WebGL Developer", period: "2018 — 2020" }
                               ].map((job, i) => (
                                   <div key={i} className="group interactive">
-                                      <div className="flex justify-between items-end border-b border-zinc-900 pb-4 mb-4 group-hover:border-zinc-700 transition-colors">
-                                          <h4 className="text-2xl text-white font-medium tracking-tight">{job.company}</h4>
+                                      <div className="flex justify-between items-end border-b border-zinc-900 pb-4 mb-4 font-helvetica group-hover:border-zinc-700 transition-colors">
+                                          <h4 className="text-2xl text-white font-helvetica font-regular tracking-tight">{job.company}</h4>
                                           <span className="text-xs text-zinc-600 font-mono">{job.period}</span>
                                       </div>
-                                      <p className="text-sm text-zinc-500">{job.role}</p>
+                                      <p className="text-sm text-zinc-500 font-helvetica font-regular">{job.role}</p>
                                   </div>
                               ))}
                           </div>
