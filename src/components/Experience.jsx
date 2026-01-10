@@ -6,7 +6,7 @@ const Experience = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32">
                 <div>
                     <h2 className="text-5xl md:text-7xl lg:text-8xl text-zinc-800 font-departure tracking-tighter mb-8 leading-none select-none opacity-90">Experience</h2>
-                     <p className="text-lg font-chakra font-normal leading-relaxed max-w-sm text-glow">
+                     <p className="text-lg font-chakra font-normal leading-relaxed max-w text-glow">
                         Delivering robust, scalable, and beautiful software solutions for industry leaders. 
                         Focusing on the intersection of design systems and WebGL.
                      </p>
