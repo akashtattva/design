@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['Roboto Mono', 'monospace'],
         departure: ['DepartureMono', 'Roboto Mono', 'monospace'],
-        chakra: ['ChakraPetch', 'Inter', 'system-ui', 'sans-serif'],
+        chakra: ['ChakraPetch', 'Helvetica Neue', 'system-ui', 'sans-serif'],
         helvetica: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {

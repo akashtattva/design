@@ -30,7 +30,7 @@ const ProjectDisclosure = ({ name, category, year, index, isOpen, onToggle }) =>
                         <span className="text-xs font-mono text-zinc-700 group-hover:text-zinc-400 transition-colors">
                             0{index + 1}
                         </span>
-                        <h3 className="text-4xl md:text-6xl text-zinc-400 group-hover:text-white font-helvetica font-regular tracking-tighter transition-all duration-300 group-hover:translate-x-4">
+                        <h3 className="text-4xl md:text-6xl text-zinc-400 group-hover:text-white font-helvetica font-normal tracking-tighter transition-all duration-300 group-hover:translate-x-4">
                             {name}
                         </h3>
                     </div>

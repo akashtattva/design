@@ -31,7 +31,7 @@ const Hero = () => {
 
     return (
         /* mb-section ensures consistent vertical spacing after the hero, preventing the next section from crowding it on smaller viewports */
-        <section ref={containerRef} className="min-h-screen mb-section flex flex-col justify-start pt-28 md:pt-36 pb-section px-6 md:px-12 max-w-screen-2xl mx-auto relative">
+        <section ref={containerRef} className="min-h-screen flex flex-col justify-start pt-28 md:pt-36 pb-section px-6 md:px-12 max-w-screen-2xl mx-auto relative">
             <div className="relative z-10 mix-blend-screen space-y-2">
                 <div className="clip-text-reveal">
                     <h1 className="hero-line text-[12vw] md:text-[8vw] font-departure text-white tracking-tighter leading-[0.85] text-glow">
@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
             
             <div className="hero-sub mt-12 md:mt-16 max-w-2xl">
-                <p className="text-lg md:text-xl text-white font-mono leading-relaxed">
+                <p className="text-2xl md:text-xl font-chakra leading-relaxed text-glow">
                     Hi, I am Akash. I am a designer who is all about solving complex problems, reverse-engineering things, and taking extensive notes. I view AI as a collaborative, creative partner that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
                     <br />
                     <br />

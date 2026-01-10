@@ -1,10 +1,12 @@
 :root {
-  --section-spacing: 8rem;
+  --section-spacing: 4rem;
+  --scroll-padding: 5rem;
 }
 
 @media (min-width: 768px) {
   :root {
-    --section-spacing: 16rem;
+    --section-spacing: 6rem;
+    --scroll-padding: 6rem;
   }
 }
 
@@ -14,7 +16,7 @@
 
 /* Ensure anchor links scroll to a position that respects the vertical rhythm and fixed header */
 html {
-  scroll-padding-top: var(--section-spacing);
+  scroll-padding-top: var(--scroll-padding);
 }
 
 /* Roboto Mono Font Face */
@@ -37,14 +39,7 @@ html {
   font-display: swap;
 }
 
-/* Chakra Petch Font Faces */
-@font-face {
-  font-family: 'ChakraPetch';
-  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+/* Chakra Petch Font Face */
 @font-face {
   font-family: 'ChakraPetch';
   src: url('/fonts/fonts-chakra-petch/ChakraPetch-Regular.ttf') format('truetype');
@@ -52,61 +47,12 @@ html {
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'ChakraPetch';
-  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ChakraPetch';
-  src: url('/fonts/fonts-chakra-petch/ChakraPetch-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'ChakraPetch';
-  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
-/* Helvetica Neue Font Faces */
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/fonts/helvetica neue/HelveticaNeue-Thin.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/fonts/helvetica neue/HelveticaNeue-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+/* Helvetica Neue Font Face */
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('/fonts/helvetica neue/HelveticaNeue-Regular.otf') format('opentype');
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/fonts/helvetica neue/HelveticaNeue-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/fonts/helvetica neue/HelveticaNeue-Bold.otf') format('opentype');
-  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

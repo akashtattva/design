@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <section id="work" ref={containerRef} className="py-section px-6 max-w-screen-2xl mx-auto opacity-0 translate-y-20">
             <div>
-                <span className="text-5xl md:text-7xl lg:text-8xl font-departure text-zinc-800 tracking-tighter mb-8 leading-none select-none opacity-90">Selected Works</span>
+                <h2 className="text-5xl md:text-7xl lg:text-8xl font-departure text-zinc-800 tracking-tighter mb-8 leading-none select-none opacity-90">Selected Works</h2>
             </div>
             <br />
             <div className="flex flex-col">

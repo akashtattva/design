@@ -27,9 +27,9 @@ const RecentWriting = () => {
     return (
         <section id="writing" className="py-section px-6 md:px-12 max-w-screen-2xl mx-auto">
             <div className="max-w-4xl">
-                <h3 className="text-2xl font-departure tracking-widest text-zinc-500 mb-4">
+                <h2 className="text-5xl md:text-7xl lg:text-8xl font-departure text-zinc-800 tracking-tighter mb-8 leading-none select-none opacity-90">
                     Recent Writing
-                </h3>
+                </h2>
                 <div className="rounded-xl border border-zinc-900/80 overflow-hidden bg-zinc-950/40">
                     {writings.map((post, i) => (
                         <a

@@ -44,7 +44,51 @@ The original monolithic code was broken down into functional React components:
 *   Moved all local font files (`DepartureMono`, `Chakra Petch`, `Helvetica Neue`) from the root directory to `public/fonts/`.
 *   Updated `@font-face` definitions in `src/styles/globals.css` to point to the new paths.
 
-### 5. Dependency Installation
+### 5. Font Classes Reference
+The following Tailwind CSS font classes are available for use throughout the application. All fonts are defined in `src/styles/globals.css` and configured in `tailwind.config.js`:
+
+**Available Font Classes:**
+*   `font-sans` - Uses **Helvetica Neue** (fallback: Helvetica, Arial, sans-serif)
+*   `font-mono` - Uses **Roboto Mono** (fallback: monospace)
+*   `font-departure` - Uses **DepartureMono** (fallback: Roboto Mono, monospace)
+*   `font-chakra` - Uses **ChakraPetch** (fallback: Helvetica Neue, system-ui, sans-serif)
+*   `font-helvetica` - Uses **Helvetica Neue** (fallback: Helvetica, Arial, sans-serif)
+
+**Font Files:**
+*   `RobotoMono-Regular.ttf` → `font-mono`
+*   `DepartureMono-Regular` (woff2, woff, otf) → `font-departure`
+*   `ChakraPetch-Regular.ttf` → `font-chakra`
+*   `HelveticaNeue-Regular.otf` → `font-sans`, `font-helvetica`
+
+**Note:** Only Regular (400 weight) font variants are loaded. Use Tailwind's font-weight utilities (`font-normal`, `font-medium`, `font-bold`, etc.) for weight variations, which will use browser-synthesized weights.
+
+### 6. Spacing Classes Reference
+Consistent vertical spacing between sections is managed through CSS variables and Tailwind utility classes defined in `src/styles/globals.css` and `tailwind.config.js`:
+
+**CSS Variables:**
+*   `--section-spacing` - Controls padding/margin between sections
+    *   Mobile: `4rem` (64px)
+    *   Desktop (≥768px): `6rem` (96px)
+*   `--scroll-padding` - Controls scroll offset for anchor links
+    *   Mobile: `5rem` (80px)
+    *   Desktop (≥768px): `6rem` (96px)
+
+**Available Spacing Classes:**
+*   `py-section` - Applies `padding-top` and `padding-bottom` using `var(--section-spacing)`
+    *   Usage: Applied to section containers for consistent vertical padding
+*   `mb-section` - Applies `margin-bottom` using `var(--section-spacing)`
+    *   Usage: Applied to sections that need bottom margin (e.g., Hero section)
+*   `pb-section` - Applies `padding-bottom` using `var(--section-spacing)`
+    *   Usage: Applied when only bottom padding is needed
+
+**Configuration:**
+*   CSS variables are defined in `:root` in `src/styles/globals.css`
+*   Tailwind spacing utility `section` is mapped to `var(--section-spacing)` in `tailwind.config.js`
+*   `scroll-padding-top` on `html` element uses `var(--scroll-padding)` for anchor link navigation
+
+**Note:** These spacing values follow modern web standards and provide consistent, readable spacing between major sections (Hero, Recent Writing, Selected Works, Experience, Contact).
+
+### 7. Dependency Installation
 Replaced CDN links with local NPM packages:
 *   `react`, `react-dom`
 *   `three` (Three.js)
