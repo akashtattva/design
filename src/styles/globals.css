@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Roboto Mono Font Face */
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DepartureMono Font Face */
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('/fonts/DepartureMono-1.500/DepartureMono-Regular.woff2') format('woff2'),
+       url('/fonts/DepartureMono-1.500/DepartureMono-Regular.woff') format('woff'),
+       url('/fonts/DepartureMono-1.500/DepartureMono-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Chakra Petch Font Faces */
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('/fonts/fonts-chakra-petch/ChakraPetch-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ChakraPetch';
+  src: url('/fonts/fonts-chakra-petch/ChakraPetch-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica Neue Font Faces */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica neue/HelveticaNeue-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica neue/HelveticaNeue-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica neue/HelveticaNeue-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica neue/HelveticaNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica neue/HelveticaNeue-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body { cursor: none; }
+/* Custom Scrollbar hide */
+::-webkit-scrollbar { width: 0px; background: transparent; }
+/* Allows tall glyphs to remain visible while keeping reveal mask */
+.clip-text-reveal { clip-path: inset(-16% -10%); }
+.text-glow { text-shadow: 0 0 20px rgba(255,255,255,0.3); }
