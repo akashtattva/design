@@ -26,6 +26,9 @@ export default {
         tight: '-0.03em',
         widest: '0.15em',
       },
+      spacing: {
+        'section': 'var(--section-spacing)',
+      },
       cursor: {
         none: 'none',
       }

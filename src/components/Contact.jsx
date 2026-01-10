@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-24 relative overflow-hidden">
+        <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-section relative overflow-hidden">
              {/* Background Glow */}
              <div className="absolute inset-0 bg-gradient-radial from-zinc-900/20 to-transparent opacity-50 pointer-events-none"></div>
 

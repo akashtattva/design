@@ -1,6 +1,21 @@
+:root {
+  --section-spacing: 8rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-spacing: 16rem;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure anchor links scroll to a position that respects the vertical rhythm and fixed header */
+html {
+  scroll-padding-top: var(--section-spacing);
+}
 
 /* Roboto Mono Font Face */
 @font-face {

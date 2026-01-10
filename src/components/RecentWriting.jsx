@@ -25,7 +25,7 @@ const RecentWriting = () => {
     ];
 
     return (
-        <section id="writing" className="py-16 md:py-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+        <section id="writing" className="py-section px-6 md:px-12 max-w-screen-2xl mx-auto">
             <div className="max-w-4xl">
                 <h3 className="text-2xl font-departure tracking-widest text-zinc-500 mb-4">
                     Recent Writing
