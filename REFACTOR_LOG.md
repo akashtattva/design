@@ -111,3 +111,15 @@ Replaced CDN links with local NPM packages:
 ## Future Recommendations
 *   **Performance:** The Three.js scene is now tree-shaken, but further optimizations (like using `react-three-fiber`) could be explored in the future for even better React integration.
 *   **Linting:** ESLint is configured; run `npm run lint` to check code quality.
+
+### 8. Visual Identity: Accent Color Integration
+**Date:** 11 January 2026
+Introduced a high-contrast accent color to enhance the industrial/tech aesthetic and improve visual hierarchy.
+
+*   **Accent Color:** `Electric Lime` (`#ccff00`)
+*   **Implementation Details:**
+    *   **Tailwind Config:** Added `accent` to the color palette.
+    *   **Global Styles:** Custom `::selection` styling (Lime background, Black text).
+    *   **Hero Section:** Keyword highlighting for impact phrases.
+    *   **Navigation:** Hover states updated from white to accent color.
+    *   **Custom Cursor:** Tinted the primary cursor dot and follower ring with the accent color.

@@ -52,7 +52,7 @@ const Hero = () => {
             
             <div className="hero-sub mt-12 md:mt-16 max-w-2xl">
             <p className="text-lg font-chakra font-normal leading-relaxed max-w text-glow">
-                    Hi, I am Akash. I am a designer who is all about solving complex problems, reverse-engineering things, and taking extensive notes. I view AI as a collaborative, creative partner that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
+                    Hi, I am Akash. I am a designer who is all about <span className="text-accent">solving complex problems</span>, reverse-engineering things, and taking extensive notes. I view AI as a <span className="text-accent">collaborative, creative partner</span> that requires human oversight; my foundational knowledge is essential for shaping its output and steering the underlying conceptual framework.
                     <br />
                     <br />
                     Please check out:

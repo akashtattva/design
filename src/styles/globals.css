@@ -58,6 +58,10 @@ html {
 }
 
 body { cursor: none; }
+::selection {
+  background-color: #ccff00; /* Electric Lime */
+  color: #000000;
+}
 /* Custom Scrollbar hide */
 ::-webkit-scrollbar { width: 0px; background: transparent; }
 /* Allows tall glyphs to remain visible while keeping reveal mask */

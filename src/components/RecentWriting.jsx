@@ -45,14 +45,14 @@ const RecentWriting = () => {
                         >
                             <div className="px-4 py-4 flex items-center justify-between gap-4">
                                 <div>
-                                     <p className="text-sm md:text-base text-zinc-300 group-hover:text-white font-helvetica">
+                                     <p className="text-sm md:text-base text-zinc-300 group-hover:text-accent font-helvetica">
                                         {post.title}
                                     </p>
-                                    <p className="text-[11px] text-zinc-500 font-mono mt-1 uppercase tracking-widest">
+                                    <p className="text-[11px] text-accent/70 font-mono mt-1 uppercase tracking-widest">
                                         {post.meta}
                                     </p>
                                 </div>
-                                <span className="text-xs text-zinc-600 group-hover:text-zinc-300 font-mono uppercase tracking-widest">
+                                <span className="text-xs text-accent/70 group-hover:text-accent font-mono uppercase tracking-widest">
                                     Read
                                 </span>
                             </div>

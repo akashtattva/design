@@ -18,8 +18,8 @@ const Experience = () => {
                         { company: "Agency", role: "WebGL Developer", period: "2018 — 2020" }
                     ].map((job, i) => (
                         <div key={i} className="group interactive">
-                            <div className="flex justify-between items-end border-b border-zinc-900 pb-4 mb-4 font-helvetica group-hover:border-zinc-700 transition-colors">
-                                <h4 className="text-2xl text-white font-helvetica font-normal tracking-tight">{job.company}</h4>
+                            <div className="flex justify-between items-end border-b border-zinc-900 pb-4 mb-4 font-helvetica group-hover:border-accent/50 transition-colors">
+                                <h4 className="text-2xl text-white group-hover:text-accent font-helvetica font-normal tracking-tight transition-colors">{job.company}</h4>
                                 <span className="text-xs text-zinc-600 font-mono">{job.period}</span>
                             </div>
                             <p className="text-sm text-zinc-500 font-helvetica font-normal">{job.role}</p>

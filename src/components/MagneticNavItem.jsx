@@ -32,7 +32,7 @@ const MagneticNavItem = ({ children, href }) => {
     }, []);
 
     return (
-        <a ref={elRef} href={href} className="interactive text-xs font-mono uppercase tracking-widest text-zinc-500 hover:text-white transition-colors py-2 px-4 block">
+        <a ref={elRef} href={href} className="text-accent/70 interactive text-xs font-mono uppercase tracking-widest hover:text-accent transition-colors py-2 px-4 block">
             {children}
         </a>
     );
