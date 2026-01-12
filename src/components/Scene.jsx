@@ -30,7 +30,7 @@ const Scene = () => {
 
         // 1. Inner Wireframe Icosahedron (The Structure)
         const geo1 = new THREE.IcosahedronGeometry(1.5, 1);
-        const mat1 = new THREE.MeshBasicMaterial({ color: 0x04fe5b, wireframe: true, transparent: true, opacity: 0.1 });
+        const mat1 = new THREE.MeshBasicMaterial({ color: 0x646568, wireframe: true, transparent: true, opacity: 0.1 });
         const mesh1 = new THREE.Mesh(geo1, mat1);
         group.add(mesh1);
 

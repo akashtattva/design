@@ -59,8 +59,8 @@ html {
 
 body { cursor: none; }
 ::selection {
-  background-color: #ccff00; /* Electric Lime */
-  color: #000000;
+  background-color: #ccff00; /* Accent Color */
+  color: #000000; /* Black */
 }
 /* Custom Scrollbar hide */
 ::-webkit-scrollbar { width: 0px; background: transparent; }
