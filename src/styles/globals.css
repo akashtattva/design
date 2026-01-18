@@ -1,4 +1,7 @@
 :root {
+  --background: #1d2021;
+  --foreground: #ebdbb2;
+  --accent: #8ae180;
   --section-spacing: 4rem;
   --scroll-padding: 5rem;
 }
@@ -59,8 +62,8 @@ html {
 
 body { cursor: none; }
 ::selection {
-  background-color: #ccff00; /* Accent Color */
-  color: #000000; /* Black */
+  background-color: var(--accent);
+  color: var(--background);
 }
 /* Custom Scrollbar hide */
 ::-webkit-scrollbar { width: 0px; background: transparent; }

@@ -14,7 +14,9 @@ export default {
         helvetica: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
-        accent: '#fafa0f',
+        accent: 'var(--accent)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         zinc: {
           850: '#1f1f22',
           900: '#18181b',

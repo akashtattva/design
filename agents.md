@@ -1,19 +1,9 @@
-# Refactor Log: Migration to Vite + React Architecture
-**Date:** 10 January 2026
-
-## Overview
-This session focused on refactoring a monolithic "single-file" HTML/JS portfolio into a modern, scalable **React** application powered by **Vite**. This transition improves performance, maintainability, and developer experience.
-
-## Key Changes
-
-### 1. Architecture Migration
-*   **From:** A single `index.html` file containing all markup, styles (Tailwind CDN), and logic (React/Babel CDN).
-*   **To:** A modular **Vite** project structure.
+A modular **Vite** project structure.
     *   **Build Tool:** Vite (for instant HMR and optimized production bundling).
     *   **Framework:** React 18 (Standard imports instead of global UMD builds).
     *   **Styling:** Tailwind CSS (PostCSS build process instead of CDN).
 
-### 2. Directory Structure Created
+### 1. Directory Structure
 ```text
 C:\portfolio\
 ├── public/                 # Static assets
@@ -33,18 +23,18 @@ C:\portfolio\
 └── vite.config.js          # Vite configuration
 ```
 
-### 3. Component Refactoring
+### 2. Components Created
 The original monolithic code was broken down into functional React components:
 *   **`Scene.jsx`**: Encapsulates the Three.js logic and GSAP scroll timeline.
 *   **`CustomCursor.jsx`**: Handles the custom mouse follower logic.
 *   **`MagneticNavItem.jsx`**: Reusable component for the magnetic hover effect.
 *   **`ProjectDisclosure.jsx`**: Handles the accordion logic for the "Selected Works" section.
 
-### 4. Asset Management
+### 3. Asset Management
 *   Moved all local font files (`DepartureMono`, `Chakra Petch`, `Helvetica Neue`) from the root directory to `public/fonts/`.
 *   Updated `@font-face` definitions in `src/styles/globals.css` to point to the new paths.
 
-### 5. Font Classes Reference
+### 4. Font Classes Reference
 The following Tailwind CSS font classes are available for use throughout the application. All fonts are defined in `src/styles/globals.css` and configured in `tailwind.config.js`:
 
 **Available Font Classes:**
@@ -62,7 +52,7 @@ The following Tailwind CSS font classes are available for use throughout the app
 
 **Note:** Only Regular (400 weight) font variants are loaded. Use Tailwind's font-weight utilities (`font-normal`, `font-medium`, `font-bold`, etc.) for weight variations, which will use browser-synthesized weights.
 
-### 6. Spacing Classes Reference
+### 5. Spacing Classes Reference
 Consistent vertical spacing between sections is managed through CSS variables and Tailwind utility classes defined in `src/styles/globals.css` and `tailwind.config.js`:
 
 **CSS Variables:**
@@ -88,7 +78,7 @@ Consistent vertical spacing between sections is managed through CSS variables an
 
 **Note:** These spacing values follow modern web standards and provide consistent, readable spacing between major sections (Hero, Recent Writing, Selected Works, Experience, Contact).
 
-### 7. Dependency Installation
+### 6. Dependency Installation
 Replaced CDN links with local NPM packages:
 *   `react`, `react-dom`
 *   `three` (Three.js)
@@ -112,7 +102,7 @@ Replaced CDN links with local NPM packages:
 *   **Performance:** The Three.js scene is now tree-shaken, but further optimizations (like using `react-three-fiber`) could be explored in the future for even better React integration.
 *   **Linting:** ESLint is configured; run `npm run lint` to check code quality.
 
-### 8. Visual Identity: Accent Color Integration
+### 7. Visual Identity: Accent Color Integration
 **Date:** 11 January 2026
 Introduced a high-contrast accent color to enhance the industrial/tech aesthetic and improve visual hierarchy.
 

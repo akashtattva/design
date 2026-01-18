@@ -34,17 +34,17 @@ const Hero = () => {
         <section ref={containerRef} className="min-h-screen flex flex-col justify-start pt-28 md:pt-36 pb-section px-6 md:px-12 max-w-screen-2xl mx-auto relative">
             <div className="relative z-10 mix-blend-screen space-y-2">
                 <div className="clip-text-reveal">
-                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-departure text-accent tracking-tighter leading-[0.85] text-glow">
+                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-departure text-accent tracking-tighter leading-[0.85]">
                         Product Designer
                     </h1>
                 </div>
                 <div className="clip-text-reveal">
-                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-chakra text-zinc-600 tracking-tighter leading-[0.85]">
+                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-chakra text-foreground tracking-tighter leading-[0.85]">
                         Creative Technologist
                     </h1>
                 </div>
                 <div className="">
-                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-medium text-white tracking-tighter leading-[0.85] text-glow">
+                    <h1 className="hero-line text-[12vw] md:text-[8vw] font-medium text-white tracking-tighter leading-[0.85]">
                     </h1>
                 </div>
 

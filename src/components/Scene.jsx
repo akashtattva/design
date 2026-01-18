@@ -30,7 +30,7 @@ const Scene = () => {
 
         // 1. Inner Wireframe Icosahedron (The Structure)
         const geo1 = new THREE.IcosahedronGeometry(1.5, 1);
-        const mat1 = new THREE.MeshBasicMaterial({ color: 0x646568, wireframe: true, transparent: true, opacity: 0.1 });
+        const mat1 = new THREE.MeshBasicMaterial({ color: 0xe4d093, wireframe: true, transparent: true, opacity: 0.1 });
         const mesh1 = new THREE.Mesh(geo1, mat1);
         group.add(mesh1);
 
@@ -45,7 +45,7 @@ const Scene = () => {
 
         // 3. Glowing Core
         const geo3 = new THREE.SphereGeometry(0.8, 32, 32);
-        const mat3 = new THREE.MeshBasicMaterial({ color: 0x000000 }); // Obscures background lines
+        const mat3 = new THREE.MeshBasicMaterial({ color: 0x3f3e3e }); // Obscures background lines
         const mesh3 = new THREE.Mesh(geo3, mat3);
         group.add(mesh3);
 
