@@ -45,7 +45,7 @@ const RecentWriting = () => {
                         >
                             <div className="px-4 py-4 flex items-center justify-between gap-4">
                                 <div>
-                                     <p className="text-sm md:text-base text-zinc-300 group-hover:text-accent font-helvetica">
+                                     <p className="text-sm md:text-base text-foreground group-hover:text-accent font-helvetica">
                                         {post.title}
                                     </p>
                                     <p className="text-[11px] text-accent/70 font-mono mt-1 uppercase tracking-widest">
