@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomCursor from './components/CustomCursor';
+// import CustomCursor from './components/CustomCursor';
 import Scene from './components/Scene';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 const App = () => {
     return (
         <div className="relative">
-            <CustomCursor />
+            {/* <CustomCursor /> */}
             <Scene />
             <Nav />
             <main className="relative z-10">

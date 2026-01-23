@@ -1,8 +1,9 @@
 import React from 'react';
+import StyledButton from './StyledButton';
 
 const Contact = () => {
     return (
-        <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-section relative overflow-hidden">
+        <section id="contact" className="min-h-screen flex items-center justify-center px-6 pt-0 pb-section relative overflow-hidden">
              {/* Background Glow */}
              <div className="absolute inset-0 bg-gradient-radial from-zinc-900/20 to-transparent opacity-50 pointer-events-none"></div>
 
@@ -14,12 +15,12 @@ const Contact = () => {
                 </h2>
                 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-16">
-                    <a href="mailto:hello@alex.dev" className="interactive px-12 py-4 bg-accent text-black font-medium text-sm rounded-full hover:scale-105 transition-transform duration-300">
+                    <StyledButton href="mailto:hello@alex.dev">
                         Email Me
-                    </a>
-                    <a href="#" className="interactive px-12 py-4 border border-accent text-accent font-medium text-sm rounded-full hover:bg-zinc-900 hover:text-white transition-all duration-300">
+                    </StyledButton>
+                    <StyledButton href="#" style={{ backgroundColor: 'var(--foreground)' }}>
                         view_resume.pdf
-                    </a>
+                    </StyledButton>
                 </div>
             </div>
             

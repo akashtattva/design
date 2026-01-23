@@ -30,7 +30,7 @@ const Projects = () => {
     };
 
     return (
-        <section id="work" ref={containerRef} className="py-section px-6 max-w-screen-2xl mx-auto opacity-0 translate-y-20">
+        <section id="work" ref={containerRef} className="pt-0 pb-section px-6 max-w-screen-2xl mx-auto opacity-0 translate-y-20">
             <div>
                 <h2 className="text-5xl md:text-7xl lg:text-8xl font-departure text-foreground opacity-30 tracking-tighter mb-8 leading-none select-none">Selected Works</h2>
             </div>

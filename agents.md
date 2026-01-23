@@ -14,6 +14,7 @@ C:\portfolio\
 │   │   ├── Nav.jsx         # Navigation bar
 │   │   ├── Hero.jsx        # Hero section
 │   │   ├── Projects.jsx    # Project gallery
+│   │   ├── StyledButton.jsx# Reusable button with advanced hover effects
 │   │   └── ... (Contact, Experience, etc.)
 │   ├── styles/
 │   │   └── globals.css     # Global styles & Tailwind directives
@@ -29,6 +30,7 @@ The original monolithic code was broken down into functional React components:
 *   **`CustomCursor.jsx`**: Handles the custom mouse follower logic.
 *   **`MagneticNavItem.jsx`**: Reusable component for the magnetic hover effect.
 *   **`ProjectDisclosure.jsx`**: Handles the accordion logic for the "Selected Works" section.
+*   **`StyledButton.jsx`**: A reusable button component with advanced hover effects (Glow, Stroke, Fill) originally from `button.html`.
 
 ### 3. Asset Management
 *   Moved all local font files (`DepartureMono`, `Chakra Petch`, `Helvetica Neue`) from the root directory to `public/fonts/`.
@@ -113,3 +115,18 @@ Introduced a high-contrast accent color to enhance the industrial/tech aesthetic
     *   **Hero Section:** Keyword highlighting for impact phrases.
     *   **Navigation:** Hover states updated from white to accent color.
     *   **Custom Cursor:** Tinted the primary cursor dot and follower ring with the accent color.
+
+### 8. UI Components: StyledButton
+**Date:** 23 January 2026
+Added a complex, reusable button component designed to replace standard `<a>` tags for primary interactions.
+
+*   **Component:** `StyledButton.jsx`
+*   **Features:**
+    *   Complex multi-layer structure (Glow, Stroke, Fill).
+    *   Advanced hover effects with transitions.
+    *   Configurable `href` and `children`.
+*   **Usage:**
+    ```jsx
+    import StyledButton from './StyledButton';
+    <StyledButton href="#">Label</StyledButton>
+    ```
