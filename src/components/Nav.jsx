@@ -4,8 +4,8 @@ import MagneticNavItem from './MagneticNavItem';
 const Nav = () => (
     <nav className="fixed top-0 left-0 w-full z-40 py-8 px-8 flex justify-between items-start mix-blend-difference pointer-events-none">
         <div className="flex flex-col gap-1 pointer-events-auto">
-            <span className="text-white text-sm font-helvetica tracking-wide uppercase interactive">Akash Popat.</span>
-            <span className="text-[10px] text-zinc-400 font-mono">Design Portfolio</span>
+            <span className="text-foreground text-sm font-helvetica tracking-wide uppercase interactive">Akash Popat.</span>
+            <span className="text-[10px] text-foreground font-mono">Design Portfolio</span>
         </div>
         <div className="hidden md:flex flex-col gap-1 items-end pointer-events-auto">
             <MagneticNavItem href="#writing">Recent Writing</MagneticNavItem>

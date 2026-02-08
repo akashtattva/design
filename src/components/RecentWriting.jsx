@@ -37,18 +37,17 @@ const RecentWriting = () => {
                             href={post.href}
                             target="_blank"
                             rel="noreferrer"
-                            className={`interactive group block transition-colors duration-500 ${
-                                i < writings.length - 1
+                            className={`interactive group block transition-colors duration-500 ${i < writings.length - 1
                                     ? "border-b border-zinc-900 hover:bg-zinc-900/20"
                                     : "hover:bg-zinc-900/20"
-                            }`}
+                                }`}
                         >
                             <div className="px-4 py-4 flex items-center justify-between gap-4">
                                 <div>
-                                     <p className="text-sm md:text-base text-foreground group-hover:text-accent font-helvetica">
+                                    <p className="text-sm md:text-base text-foreground group-hover:text-accent font-helvetica">
                                         {post.title}
                                     </p>
-                                    <p className="text-[11px] text-accent/70 font-mono mt-1 uppercase tracking-widest">
+                                    <p className="text-[11px] text-accent font-mono mt-1 uppercase tracking-widest">
                                         {post.meta}
                                     </p>
                                 </div>

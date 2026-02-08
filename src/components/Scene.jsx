@@ -12,7 +12,7 @@ const Scene = () => {
         // Setup
         const scene = new THREE.Scene();
         // Deep fog for infinite void feel
-        scene.fog = new THREE.FogExp2(0x050505, 0.03); 
+        scene.fog = new THREE.FogExp2(0x050505, 0.03);
 
         const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
         camera.position.z = 8;
@@ -30,7 +30,7 @@ const Scene = () => {
 
         // 1. Inner Wireframe Icosahedron (The Structure)
         const geo1 = new THREE.IcosahedronGeometry(1.5, 1);
-        const mat1 = new THREE.MeshBasicMaterial({ color: 0xe4d093, wireframe: true, transparent: true, opacity: 0.1 });
+        const mat1 = new THREE.MeshBasicMaterial({ color: 0xa9927d, wireframe: true, transparent: true, opacity: 0.1 });
         const mesh1 = new THREE.Mesh(geo1, mat1);
         group.add(mesh1);
 
@@ -39,13 +39,13 @@ const Scene = () => {
         const pos = geo2.attributes.position.array;
         const pointsGeo = new THREE.BufferGeometry();
         pointsGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-        const pointsMat = new THREE.PointsMaterial({ size: 0.03, color: 0xc9ada7 }); // zinc-500
+        const pointsMat = new THREE.PointsMaterial({ size: 0.03, color: 0xe9edc9 });
         const points = new THREE.Points(pointsGeo, pointsMat);
         group.add(points);
 
         // 3. Glowing Core
         const geo3 = new THREE.SphereGeometry(0.8, 32, 32);
-        const mat3 = new THREE.MeshBasicMaterial({ color: 0x3f3e3e }); // Obscures background lines
+        const mat3 = new THREE.MeshBasicMaterial({ color: 0x403d39 }); // Obscures background lines
         const mesh3 = new THREE.Mesh(geo3, mat3);
         group.add(mesh3);
 
@@ -83,25 +83,25 @@ const Scene = () => {
 
         // Phase 1: Hero -> Work (Object moves right, rotates)
         tl.to(group.rotation, { x: 1, y: 2, duration: 10 }, 0)
-          .to(group.position, { x: 2, z: -2, duration: 10 }, 0)
-          .to(camera.position, { z: 6, duration: 10 }, 0);
+            .to(group.position, { x: 2, z: -2, duration: 10 }, 0)
+            .to(camera.position, { z: 6, duration: 10 }, 0);
 
         // Phase 2: Work -> Experience (Object moves left, expands)
         tl.to(group.rotation, { x: 3, y: 0, duration: 10 }, 10)
-          .to(group.position, { x: -2.5, y: 1, duration: 10 }, 10)
-          .to(mesh1.material, { opacity: 0.1, duration: 5 }, 10); // Fade wireframe
+            .to(group.position, { x: -2.5, y: 1, duration: 10 }, 10)
+            .to(mesh1.material, { opacity: 0.1, duration: 5 }, 10); // Fade wireframe
 
         // Phase 3: Experience -> Contact (Object centers, disperses)
         tl.to(group.position, { x: 0, y: 0, z: 0, duration: 10 }, 20)
-          .to(points.material, { size: 0.08, color: 0xffffff, duration: 5 }, 20)
-          .to(group.rotation, { y: 4, duration: 10 }, 20);
+            .to(points.material, { size: 0.08, color: 0xffffff, duration: 5 }, 20)
+            .to(group.rotation, { y: 4, duration: 10 }, 20);
 
 
         // Render Loop
         const animate = () => {
             // Check if component is still mounted
             if (!mountRef.current) return;
-            
+
             requestAnimationFrame(animate);
 
             // Mouse parallax (Subtle)
@@ -127,14 +127,14 @@ const Scene = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('mousemove', handleMouseMove);
-            if(mountRef.current && mountRef.current.contains(renderer.domElement)) {
+            if (mountRef.current && mountRef.current.contains(renderer.domElement)) {
                 mountRef.current.removeChild(renderer.domElement);
             }
             // Kill ScrollTriggers created in this component
             // We use ScrollTrigger.getAll() which might be too aggressive if other components use it,
             // but since this is the main driver, it's safer to just kill the timeline if we captured it, 
             // or let React cleanup handle it. 
-            tl.kill(); 
+            tl.kill();
             // Better to kill specific timeline.
         };
     }, []);
