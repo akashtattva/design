@@ -21,6 +21,8 @@ const Scene = () => {
         const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        // Ensure the renderer clears to transparent so body background layers remain visible
+        renderer.setClearColor(0x000000, 0);
         if (mountRef.current) {
             mountRef.current.appendChild(renderer.domElement);
         }

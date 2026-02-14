@@ -1,17 +1,31 @@
 :root {
   --background: #1d2021;
   --foreground: #ebdbb2;
-  --accent: #8ae180;
+  --accent: #fff3b0;
   --section-spacing: 4rem;
   --scroll-padding: 5rem;
 }
 body {
-  background-image: 
-        linear-gradient(rgba(138, 225, 128, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(138, 225, 128, 0.1) 1px, transparent 1px),
-        linear-gradient(rgba(235, 219, 178, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(235, 219, 178, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  /* Two vertical dashed bars + grid background combined into multiple layers */
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      var(--accent) 0 3px,
+      transparent 10px 10px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--accent) 0 3px,
+      transparent 10px 10px
+    ),
+    linear-gradient(rgba(138, 225, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(138, 225, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(235, 219, 178, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 219, 178, 0.05) 1px, transparent 1px);
+  background-repeat: no-repeat, no-repeat, repeat, repeat, repeat, repeat;
+  /* Make horizontal grid tiles span full width and vertical grid tiles span full height */
+  background-size: 1px 100%, 1px 100%, 100% 50px, 50px 100%, 100% 10px, 10px 100%;
+  background-position: 4% 0, 96% 0, 0 0, 0 0, 0 0, 0 0;
 }
 
 @media (min-width: 768px) {
@@ -78,3 +92,20 @@ html {
 /* Allows tall glyphs to remain visible while keeping reveal mask */
 .clip-text-reveal { clip-path: inset(-16% -10%); }
 .text-glow { text-shadow: 0 0 20px rgba(255,255,255,0.3); }
+
+/* Ogg Bold + Bold Italic Font Faces */
+@font-face {
+  font-family: 'Ogg';
+  src: url('/fonts/Ogg/Ogg-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('/fonts/Ogg/Ogg-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

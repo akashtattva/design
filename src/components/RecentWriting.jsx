@@ -27,7 +27,7 @@ const RecentWriting = () => {
     return (
         <section id="writing" className="pt-0 pb-section px-6 md:px-12 max-w-screen-2xl mx-auto">
             <div className="max-w-4xl">
-                <h2 className="text-5xl md:text-7xl lg:text-8xl font-departure text-foreground opacity-30 tracking-tighter mb-8 leading-none select-none">
+                <h2 className="text-5xl md:text-7xl lg:text-8xl font-ogg text-foreground tracking-tighter mb-8 leading-none select-none">
                     Recent Writing
                 </h2>
                 <div className="rounded-xl border border-zinc-900/80 overflow-hidden bg-zinc-950/40">
@@ -44,7 +44,7 @@ const RecentWriting = () => {
                         >
                             <div className="px-4 py-4 flex items-center justify-between gap-4">
                                 <div>
-                                    <p className="text-sm md:text-base text-foreground group-hover:text-accent font-helvetica">
+                                    <p className="text-normal md:text-base text-foreground group-hover:text-accent font-ogg">
                                         {post.title}
                                     </p>
                                     <p className="text-[11px] text-accent font-mono mt-1 uppercase tracking-widest">

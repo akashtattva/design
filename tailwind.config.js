@@ -12,6 +12,7 @@ export default {
         departure: ['DepartureMono', 'Roboto Mono', 'monospace'],
         chakra: ['ChakraPetch', 'Helvetica Neue', 'system-ui', 'sans-serif'],
         helvetica: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        ogg: ['Ogg', 'serif'],
       },
       colors: {
         accent: 'var(--accent)',

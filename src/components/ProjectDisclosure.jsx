@@ -27,15 +27,15 @@ const ProjectDisclosure = ({ name, category, year, index, isOpen, onToggle }) =>
             >
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline px-4 relative z-10 hover:bg-transparent">
                     <div className="flex items-baseline gap-8 md:gap-16">
-                        <span className="text-xs font-mono text-zinc-700 group-hover:text-zinc-400 transition-colors">
+                        <span className="text-xs font-mono text-foreground group-hover:text-accent transition-colors">
                             0{index + 1}
                         </span>
-                        <h3 className="text-4xl md:text-6xl text-zinc-400 group-hover:text-accent font-helvetica font-normal tracking-tighter transition-all duration-300 group-hover:translate-x-4">
+                        <h3 className="text-4xl md:text-6xl text-foreground group-hover:text-accent font-ogg font-normal tracking-tighter transition-all duration-300 group-hover:translate-x-4">
                             {name}
                         </h3>
                     </div>
                     <div className="mt-4 md:mt-0 flex items-center gap-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-2 group-hover:translate-y-0">
-                        <span className="text-sm text-zinc-500 font-mono">{category}</span>
+                        <span className="text-sm text-foreground font-mono">{category}</span>
                         <span className="text-xs text-accent border border-accent/20 px-3 py-1 rounded-full">{year}</span>
                     </div>
                 </div>

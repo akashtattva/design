@@ -9,9 +9,9 @@ const Contact = () => {
 
             <div className="text-center relative z-10 max-w-4xl mx-auto">
                 <span className="text-xs font-mono text-accent uppercase tracking-widest mb-6 block">happy to chat with interesting people</span>
-                <h2 className="text-6xl md:text-9xl text-foreground font-departure tracking-tighter mb-8 mix-blend-difference">
+                <h2 className="text-6xl md:text-9xl text-foreground font-ogg tracking-tighter mb-8 mix-blend-difference">
                     let's build<br />
-                    <span className="text-accent font-chakra">something great</span>
+                    <span className="text-accent font-ogg">something great</span>
                 </h2>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-16">
